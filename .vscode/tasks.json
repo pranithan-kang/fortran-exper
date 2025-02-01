@@ -1,0 +1,10 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "shell",
+            "label": "gfbuild",
+            "command": "gfortran-10 -c custom_subroutines.f90 main_prog.f90 -g3 -O0 -fbacktrace -fcheck=all -ffpe-trap=zero,overflow,underflow -Wall -Wextra -Warray-temporaries -Wconversion -ffree-line-length-0 && gfortran-10 custom_subroutines.o main_prog.o",
+        }
+    ]
+}
